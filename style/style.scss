@@ -1,0 +1,98 @@
+@import "variables";
+@import "mixins";
+
+body{
+    margin: 0;
+    font-family: sans-serif;
+}
+
+section, header, footer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.wrap{
+    width: $alinhamentoPrincipal;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+#banner{
+    background-image: url(../img/home_banner_bg.jpg);
+    height: 100vh;
+            
+    .banner-section{
+        flex-direction: column;
+
+
+        #menu{
+            width: 60%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 30px 0;
+            position: fixed;
+    
+            p{
+                font-size: $logoTamanho;
+                font-weight: 600;
+                margin: 0;
+                color: $branco;
+            }
+                
+            nav>ul{
+                width: 600px;
+                display: flex;
+                justify-content: space-between;
+                list-style: none;
+                    
+                a{
+                    text-decoration: none;
+                    color: $branco;
+                }
+            }
+        }
+
+        #chamada{
+            max-width: 600px;
+            height: 95vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h1{
+                font-size: $titulo;
+                color: $branco;
+            }
+
+            p{
+                color: $corTerciaria;
+                font-size: $logoTamanho - 9px;
+            }
+
+            button{
+                background-color: rgb(22, 23, 101);
+                border-color: rgb(0, 0, 0);
+                border-radius: 30px;
+                color: $branco;
+                font-size: 14px;
+                padding: 17px 30px;
+                margin-top: 80px;
+                max-width: 30%;
+
+                &:hover{
+                    background-color: $branco;
+                    color: rgb(22, 23, 101);
+                    border: $branco;
+                }
+            }
+        }
+
+    }
+
+
+} 
+
+
