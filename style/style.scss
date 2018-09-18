@@ -18,6 +18,20 @@ section, header, footer{
     flex-wrap: wrap;
 }
 
+a{
+    text-decoration: none;
+}
+
+p{
+    color: $cinza;
+    font-size: $texto;
+    line-height: 30px;
+}
+
+h4{
+    font-size: 19px;
+}
+
 
 #banner{
     background-image: url(../img/home_banner_bg.jpg);
@@ -49,7 +63,6 @@ section, header, footer{
                 list-style: none;
                     
                 a{
-                    text-decoration: none;
                     color: $branco;
                 }
             }
@@ -73,7 +86,7 @@ section, header, footer{
             }
 
             button{
-                background-color: rgb(22, 23, 101);
+                background-color: $corPrincipal;
                 border-color: rgb(0, 0, 0);
                 border-radius: 30px;
                 color: $branco;
@@ -89,10 +102,55 @@ section, header, footer{
                 }
             }
         }
+    }
+}
 
+#servicos{
+    justify-content: space-between;
+}
+
+.servicos-item{
+    width: 260px;
+    background-color: $branco;
+    box-shadow: $sombra;
+    display: flex;
+    flex-direction: column;
+    padding: 80px 50px 0;
+    border-radius: 6px;
+    box-sizing: border-box;
+    position: relative;
+    bottom: 160px;
+
+    img{
+        width: 70px;
     }
 
+    h4{
+        color: $corPrincipal,
+    }
 
-} 
+    div {
+        width: 63px;
+        height: 3px;
+        background-color: $corSecundaria;
+    }
+
+    a{
+        color: $corPrincipal;
+        margin: 25px 0 60px 0;
+    }
+
+    #linha{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .divisao-bottom{
+        width: 200px;
+        height: 1px;
+        background-color: $corSecundaria;
+    }
+}
 
 

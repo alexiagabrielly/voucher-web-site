@@ -12,6 +12,17 @@ section, header, footer {
   display: flex;
   flex-wrap: wrap; }
 
+a {
+  text-decoration: none; }
+
+p {
+  color: #777;
+  font-size: 17px;
+  line-height: 30px; }
+
+h4 {
+  font-size: 19px; }
+
 #banner {
   background-image: url(../img/home_banner_bg.jpg);
   height: 100vh; }
@@ -35,7 +46,6 @@ section, header, footer {
         justify-content: space-between;
         list-style: none; }
         #banner .banner-section #menu nav > ul a {
-          text-decoration: none;
           color: #fff; }
     #banner .banner-section #chamada {
       max-width: 600px;
@@ -50,7 +60,7 @@ section, header, footer {
         color: #44a7ff;
         font-size: 21px; }
       #banner .banner-section #chamada button {
-        background-color: #161765;
+        background-color: #1b1b4f;
         border-color: black;
         border-radius: 30px;
         color: #fff;
@@ -62,5 +72,39 @@ section, header, footer {
           background-color: #fff;
           color: #161765;
           border: #fff; }
+
+#servicos {
+  justify-content: space-between; }
+
+.servicos-item {
+  width: 260px;
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(200, 196, 219, 0.3);
+  display: flex;
+  flex-direction: column;
+  padding: 80px 50px 0;
+  border-radius: 6px;
+  box-sizing: border-box;
+  position: relative;
+  bottom: 160px; }
+  .servicos-item img {
+    width: 70px; }
+  .servicos-item h4 {
+    color: #1b1b4f; }
+  .servicos-item div {
+    width: 63px;
+    height: 3px;
+    background-color: #52eac8; }
+  .servicos-item a {
+    color: #1b1b4f;
+    margin: 25px 0 60px 0; }
+  .servicos-item #linha {
+    display: flex;
+    justify-content: center;
+    width: 100%; }
+  .servicos-item .divisao-bottom {
+    width: 200px;
+    height: 1px;
+    background-color: #52eac8; }
 
 /*# sourceMappingURL=style.css.map */
