@@ -280,3 +280,92 @@ h2{
         }
     }
 }
+
+//cases
+
+#cases{
+    background-image: url(../img/home_webdeveloper_sectionbg5.jpg);
+    margin-top: 100px;
+}
+
+#case1{
+    margin-top: 100px;
+    display: flex;
+
+    .case1-conteudo{
+        width: 35%;
+
+        h2{
+            color: $corPrincipal;
+        }
+
+        h4{
+            color: $corComposta;
+        }
+    }
+
+    
+    .case1-img{
+        width: 60%;
+        padding-left: 8%;
+        
+        a{
+            position: relative;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        h2{
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            color: $branco;
+        }
+    }
+}
+
+#case2{
+    margin: 100px 0;
+    display: flex;
+
+    .case2-img{
+        width: 60%;
+        padding-right: 8%;
+        
+        a{
+            position: relative;
+        }
+
+        img{
+            max-width: 100%;
+            height: auto;
+        }
+
+        h2{
+            position: absolute;
+            bottom: 0;
+            left: 20px;
+            color: $branco;
+        }
+    }
+
+    .case2-conteudo{
+        width: 35%;
+
+        p{
+            color: $branco;
+        }
+
+        ul{
+            list-style: none;
+            color: $branco;
+
+            li{
+                padding: 15px 0;
+            }
+        }
+    }
+}
