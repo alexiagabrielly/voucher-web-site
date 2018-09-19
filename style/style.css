@@ -23,6 +23,9 @@ p {
 h4 {
   font-size: 19px; }
 
+h2 {
+  font-size: 42px; }
+
 #banner {
   background-image: url(../img/home_banner_bg.jpg);
   height: 100vh; }
@@ -154,5 +157,37 @@ h4 {
       color: #1b1b4f; }
     .passo2-conteudo div h3 {
       color: #5774bd; }
+
+#dados {
+  background-image: url(../img/home_webdeveloper_sectionbg3.png);
+  background-color: #1b1b4f;
+  color: #fff;
+  padding: 150px 0;
+  text-align: center; }
+
+#dados-box {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 90px; }
+  #dados-box div {
+    border: 2px solid #52eac8;
+    border-radius: 10px;
+    padding: 30px;
+    width: 25%;
+    height: 75%; }
+    #dados-box div img {
+      position: relative;
+      bottom: 100px; }
+    #dados-box div .numero {
+      color: #52eac8;
+      font-size: 100px;
+      font-weight: 200;
+      margin: 0;
+      position: relative;
+      bottom: 50px; }
+    #dados-box div p {
+      color: #fff;
+      font-weight: 800; }
 
 /*# sourceMappingURL=style.css.map */

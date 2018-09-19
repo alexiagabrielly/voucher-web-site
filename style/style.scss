@@ -32,6 +32,10 @@ h4{
     font-size: 19px;
 }
 
+h2{
+    font-size: 42px;
+}
+
 
 #banner{
     background-image: url(../img/home_banner_bg.jpg);
@@ -227,6 +231,52 @@ h4{
 
         h3{
             color: $corComposta;
+        }
+    }
+}
+
+
+//Dados
+
+#dados{
+    background-image: url(../img/home_webdeveloper_sectionbg3.png);
+    background-color: $corPrincipal;
+    color: $branco;
+    padding: 150px 0;
+    text-align: center;
+    
+}
+
+#dados-box{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 90px;
+
+    div{
+        border: 2px solid $corSecundaria;
+        border-radius: 10px;
+        padding: 30px;
+        width: 25%;
+        height: 75%;
+
+        img{
+            position: relative;
+            bottom: 100px;
+        }
+
+        .numero{
+            color: $corSecundaria;
+            font-size: 100px;
+            font-weight: 200;
+            margin: 0;
+            position: relative;
+            bottom: 50px;
+        }
+
+        p{
+            color: $branco;
+            font-weight: 800;
         }
     }
 }
