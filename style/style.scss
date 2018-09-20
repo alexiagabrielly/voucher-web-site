@@ -30,33 +30,29 @@ p{
 
 h4{
     font-size: 19px;
+    color: $corPrincipal;
 }
 
 h2{
     font-size: 42px;
+    color: $corPrincipal;
 }
 
 
-#banner{
-    background-image: url(../img/home_banner_bg.jpg);
-    height: 100vh;
+.banner{
+    
              
     #navegacao{
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 30px 0;
-        position: fixed;
+        z-index: 2;
     } 
     
     .scroll{
         padding: 20px;
-        background-color: #650164;
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        align-items: center;
-        color: white;
+        background-color: $corPrincipal;
     }
 
     #menu{
@@ -74,7 +70,7 @@ h2{
             color: $branco;
         }
             
-        div>ul{
+        nav>ul{
             width: 600px;
             display: flex;
             justify-content: space-between;
@@ -127,6 +123,30 @@ h2{
     }
 }
 
+#banner-home{
+    background-image: url(../img/home_banner_bg.jpg);
+    height: 100vh;
+}
+
+#banner-sobre{
+    background-image: url(../img/home_webdeveloper_subheaderbg1.jpg);
+    background-repeat: no-repeat;
+
+    #chamada-sobre{
+        max-width: 100vw;
+        height: 60vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h1{
+            font-size: $titulo;
+            color: $branco;
+        }
+    }
+}
+
 //Serviços
 
 #servicos{
@@ -135,48 +155,52 @@ h2{
 
 .servicos-item{
     width: 23%;
-    background-color: $branco;
-    box-shadow: $sombra;
     display: flex;
     flex-direction: column;
     padding: 80px 50px 0;
+    box-sizing: border-box;
+    margin: 50px 0;
+}
+
+.servicos-item-home{
+    @extend .servicos-item;
+
+    background-color: $branco;
+    box-shadow: $sombra;
     margin: 0 1% 40px;
     border-radius: 6px;
-    box-sizing: border-box;
     position: relative;
     bottom: 160px;
-
-    img{
-        width: 70px;
-    }
-
-    h4{
-        color: $corPrincipal,
-    }
-
-    div {
-        width: 63px;
-        height: 3px;
-        background-color: $corSecundaria;
-    }
 
     a{
         color: $corPrincipal;
         margin: 25px 0 60px 0;
     }
 
-    #linha{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-    }
-
-    .divisao-bottom{
-        width: 200px;
-        height: 1px;
-        background-color: $corSecundaria;
-    }
 }
+
+.divisao {
+    width: 63px;
+    height: 3px;
+    background-color: $corSecundaria;
+}
+
+#linha{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.divisao-bottom{
+    width: 200px;
+    height: 1px;
+    background-color: $corSecundaria;
+}
+
+.servicos-img{
+    width: 70px;
+}
+
 
 //passos
 
@@ -184,7 +208,7 @@ h2{
     background-color: $passo1;
     background-image: url(../img/home_webdeveloper_sectionbg1.png);
     background-repeat: no-repeat;
-    padding: 150px 0;
+    padding: 80px 0;
 
     div{
         justify-content: space-between;
@@ -217,11 +241,21 @@ h2{
     }
 }
 
+.passo1-sobre-tech{
+    flex-direction: column;
+    align-items: center;
+}
+
+.passo1-sobre-items{
+    width: 100%;
+    display: flex;
+}
+
 #passo2{
     background-color: $passo2;
     background-image: url(../img/home_webdeveloper_sectionbg2.png);
     background-repeat: no-repeat;
-    padding: 150px 0;
+    padding: 80px 0;
 
     div{
         justify-content: space-between;
@@ -252,6 +286,26 @@ h2{
             color: $corComposta;
         }
     }
+}
+
+.passo2-sobre-descricao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.passo2-sobre-item-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.passo2-sobre-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 

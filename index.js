@@ -5,8 +5,6 @@ window.onscroll = () => {
     } else {
         nav.className = 'scroll';
     }
-
-    console.log(nav);
 }
 
 const go = (elemento) => {

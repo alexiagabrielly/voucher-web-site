@@ -21,115 +21,132 @@ p {
   line-height: 30px; }
 
 h4 {
-  font-size: 19px; }
+  font-size: 19px;
+  color: #1b1b4f; }
 
 h2 {
-  font-size: 42px; }
+  font-size: 42px;
+  color: #1b1b4f; }
 
-#banner {
-  background-image: url(../img/home_banner_bg.jpg);
-  height: 100vh; }
-  #banner #navegacao {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 30px 0;
-    position: fixed; }
-  #banner .scroll {
-    padding: 20px;
-    background-color: #650164;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    color: white; }
-  #banner #menu {
-    width: 60%;
+.banner #navegacao {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+  z-index: 2; }
+.banner .scroll {
+  padding: 20px;
+  background-color: #1b1b4f; }
+.banner #menu {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 0;
+  position: fixed; }
+  .banner #menu p {
+    font-size: 30px;
+    font-weight: 600;
+    margin: 0;
+    color: #fff; }
+  .banner #menu nav > ul {
+    width: 600px;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 30px 0;
-    position: fixed; }
-    #banner #menu p {
-      font-size: 30px;
-      font-weight: 600;
-      margin: 0;
+    list-style: none; }
+    .banner #menu nav > ul a {
       color: #fff; }
-    #banner #menu div > ul {
-      width: 600px;
-      display: flex;
-      justify-content: space-between;
-      list-style: none; }
-      #banner #menu div > ul a {
-        color: #fff; }
-  #banner .banner-section {
-    flex-direction: column; }
-    #banner .banner-section #chamada {
-      max-width: 600px;
-      height: 95vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
-      #banner .banner-section #chamada h1 {
-        font-size: 65px;
-        color: #fff; }
-      #banner .banner-section #chamada p {
-        color: #44a7ff;
-        font-size: 21px; }
-      #banner .banner-section #chamada button {
-        background-color: #1b1b4f;
-        border-color: black;
-        border-radius: 30px;
-        color: #fff;
-        font-size: 14px;
-        padding: 17px 30px;
-        margin-top: 80px;
-        max-width: 30%; }
-        #banner .banner-section #chamada button:hover {
-          background-color: #fff;
-          color: #161765;
-          border: #fff; }
+.banner .banner-section {
+  flex-direction: column; }
+  .banner .banner-section #chamada {
+    max-width: 600px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .banner .banner-section #chamada h1 {
+      font-size: 65px;
+      color: #fff; }
+    .banner .banner-section #chamada p {
+      color: #44a7ff;
+      font-size: 21px; }
+    .banner .banner-section #chamada button {
+      background-color: #1b1b4f;
+      border-color: black;
+      border-radius: 30px;
+      color: #fff;
+      font-size: 14px;
+      padding: 17px 30px;
+      margin-top: 80px;
+      max-width: 30%; }
+      .banner .banner-section #chamada button:hover {
+        background-color: #fff;
+        color: #161765;
+        border: #fff; }
+
+#banner-home {
+  background-image: url(../img/home_banner_bg.jpg);
+  height: 100vh; }
+
+#banner-sobre {
+  background-image: url(../img/home_webdeveloper_subheaderbg1.jpg);
+  background-repeat: no-repeat; }
+  #banner-sobre #chamada-sobre {
+    max-width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #banner-sobre #chamada-sobre h1 {
+      font-size: 65px;
+      color: #fff; }
 
 #servicos {
   justify-content: space-between; }
 
-.servicos-item {
+.servicos-item, .servicos-item-home {
   width: 23%;
-  background-color: #fff;
-  box-shadow: 0px 0px 30px rgba(200, 196, 219, 0.3);
   display: flex;
   flex-direction: column;
   padding: 80px 50px 0;
+  box-sizing: border-box;
+  margin: 50px 0; }
+
+.servicos-item-home {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px rgba(200, 196, 219, 0.3);
   margin: 0 1% 40px;
   border-radius: 6px;
-  box-sizing: border-box;
   position: relative;
   bottom: 160px; }
-  .servicos-item img {
-    width: 70px; }
-  .servicos-item h4 {
-    color: #1b1b4f; }
-  .servicos-item div {
-    width: 63px;
-    height: 3px;
-    background-color: #52eac8; }
-  .servicos-item a {
+  .servicos-item-home a {
     color: #1b1b4f;
     margin: 25px 0 60px 0; }
-  .servicos-item #linha {
-    display: flex;
-    justify-content: center;
-    width: 100%; }
-  .servicos-item .divisao-bottom {
-    width: 200px;
-    height: 1px;
-    background-color: #52eac8; }
+
+.divisao {
+  width: 63px;
+  height: 3px;
+  background-color: #52eac8; }
+
+#linha {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+
+.divisao-bottom {
+  width: 200px;
+  height: 1px;
+  background-color: #52eac8; }
+
+.servicos-img {
+  width: 70px; }
 
 #passo1 {
   background-color: #f8faff;
   background-image: url(../img/home_webdeveloper_sectionbg1.png);
   background-repeat: no-repeat;
-  padding: 150px 0; }
+  padding: 80px 0; }
   #passo1 div {
     justify-content: space-between;
     align-content: center; }
@@ -149,11 +166,19 @@ h2 {
     .passo1-conteudo div h3 {
       color: #5774bd; }
 
+.passo1-sobre-tech {
+  flex-direction: column;
+  align-items: center; }
+
+.passo1-sobre-items {
+  width: 100%;
+  display: flex; }
+
 #passo2 {
   background-color: #edf2ff;
   background-image: url(../img/home_webdeveloper_sectionbg2.png);
   background-repeat: no-repeat;
-  padding: 150px 0; }
+  padding: 80px 0; }
   #passo2 div {
     justify-content: space-between;
     align-content: center; }
@@ -172,6 +197,23 @@ h2 {
       color: #1b1b4f; }
     .passo2-conteudo div h3 {
       color: #5774bd; }
+
+.passo2-sobre-descricao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.passo2-sobre-item-wrap {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px; }
+
+.passo2-sobre-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
 
 #dados {
   background-image: url(../img/home_webdeveloper_sectionbg3.png);
@@ -281,7 +323,7 @@ footer {
   #servicos {
     justify-content: space-between; }
 
-  .servicos-item {
+  .servicos-item, .servicos-item-home {
     width: 410px;
     position: relative;
     bottom: 90px;
