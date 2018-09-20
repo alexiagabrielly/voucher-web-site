@@ -40,37 +40,55 @@ h2{
 #banner{
     background-image: url(../img/home_banner_bg.jpg);
     height: 100vh;
+             
+    #navegacao{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 0;
+        position: fixed;
+    } 
+    
+    .scroll{
+        padding: 20px;
+        background-color: #650164;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        color: white;
+    }
+
+    #menu{
+        width: $alinhamentoPrincipal;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px 0;
+        position: fixed;
+
+        p{
+            font-size: $logoTamanho;
+            font-weight: 600;
+            margin: 0;
+            color: $branco;
+        }
             
-    .banner-section{
-        flex-direction: column;
-
-
-        #menu{
-            width: $alinhamentoPrincipal;
+        div>ul{
+            width: 600px;
             display: flex;
             justify-content: space-between;
-            align-items: center;
-            padding: 30px 0;
-            position: fixed;
-    
-            p{
-                font-size: $logoTamanho;
-                font-weight: 600;
-                margin: 0;
+            list-style: none;
+                
+            a{
                 color: $branco;
             }
-                
-            nav>ul{
-                width: 600px;
-                display: flex;
-                justify-content: space-between;
-                list-style: none;
-                    
-                a{
-                    color: $branco;
-                }
-            }
         }
+    }
+    
+
+    .banner-section{
+        flex-direction: column;
 
         #chamada{
             max-width: 600px;

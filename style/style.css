@@ -29,27 +29,41 @@ h2 {
 #banner {
   background-image: url(../img/home_banner_bg.jpg);
   height: 100vh; }
-  #banner .banner-section {
-    flex-direction: column; }
-    #banner .banner-section #menu {
-      width: 60%;
+  #banner #navegacao {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    position: fixed; }
+  #banner .scroll {
+    padding: 20px;
+    background-color: #650164;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    color: white; }
+  #banner #menu {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0;
+    position: fixed; }
+    #banner #menu p {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
+      color: #fff; }
+    #banner #menu div > ul {
+      width: 600px;
       display: flex;
       justify-content: space-between;
-      align-items: center;
-      padding: 30px 0;
-      position: fixed; }
-      #banner .banner-section #menu p {
-        font-size: 30px;
-        font-weight: 600;
-        margin: 0;
+      list-style: none; }
+      #banner #menu div > ul a {
         color: #fff; }
-      #banner .banner-section #menu nav > ul {
-        width: 600px;
-        display: flex;
-        justify-content: space-between;
-        list-style: none; }
-        #banner .banner-section #menu nav > ul a {
-          color: #fff; }
+  #banner .banner-section {
+    flex-direction: column; }
     #banner .banner-section #chamada {
       max-width: 600px;
       height: 95vh;
