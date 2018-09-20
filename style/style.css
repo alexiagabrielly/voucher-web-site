@@ -102,6 +102,20 @@ h2 {
       font-size: 65px;
       color: #fff; }
 
+#banner-como-resgatar {
+  background-image: url(../img/home_webdeveloper_subheaderbg3.jpg);
+  background-repeat: no-repeat; }
+  #banner-como-resgatar #chamada-como-resgatar {
+    max-width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #banner-como-resgatar #chamada-como-resgatar h1 {
+      font-size: 65px;
+      color: #fff; }
+
 #servicos {
   justify-content: space-between; }
 
@@ -319,6 +333,9 @@ footer {
       #banner .banner-section #chamada button {
         margin-top: 30px;
         max-width: 50%; }
+
+  #banner-sobre #chamada-sobre {
+    height: 30vh; }
 
   #servicos {
     justify-content: space-between; }
