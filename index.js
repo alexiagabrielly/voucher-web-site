@@ -1,10 +1,12 @@
 window.onscroll = () => {
-    let nav = document.querySelector('nav');
+    let header = document.querySelector('header');
     if(this.scrollY <= 10){
-        nav.className = '';
+        header.classList.remove("scroll");
     } else {
-        nav.className = 'scroll';
+        header.classList.add("scroll");
     }
+
+    console.log(header.classList);
 }
 
 const go = (elemento) => {

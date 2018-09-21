@@ -28,65 +28,81 @@ h2 {
   font-size: 42px;
   color: #1b1b4f; }
 
-.banner #navegacao {
+.scroll {
+  background-color: #1b1b4f;
+  opacity: .97; }
+
+header {
+  position: fixed;
+  z-index: 2;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 30px 0;
-  z-index: 2; }
-.banner .scroll {
-  padding: 20px;
-  background-color: #1b1b4f; }
-.banner #menu {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 30px 0;
-  position: fixed; }
-  .banner #menu p {
-    font-size: 30px;
-    font-weight: 600;
-    margin: 0;
-    color: #fff; }
-  .banner #menu nav > ul {
-    width: 600px;
+  width: 100vw; }
+  header #navegacao {
+    width: 60%; }
+  header #menu {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    list-style: none; }
-    .banner #menu nav > ul a {
+    align-items: center;
+    padding: 15px 0; }
+    header #menu p {
+      font-size: 30px;
+      font-weight: 600;
+      margin: 0;
       color: #fff; }
-.banner .banner-section {
-  flex-direction: column; }
-  .banner .banner-section #chamada {
-    max-width: 600px;
-    height: 95vh;
+    header #menu nav > ul {
+      width: 450px;
+      display: flex;
+      justify-content: space-between;
+      list-style: none; }
+      header #menu nav > ul a {
+        color: #fff; }
+  header .toggle .menu-box {
     display: flex;
     flex-direction: column;
-    justify-content: center; }
-    .banner .banner-section #chamada h1 {
-      font-size: 65px;
-      color: #fff; }
-    .banner .banner-section #chamada p {
-      color: #44a7ff;
-      font-size: 21px; }
-    .banner .banner-section #chamada button {
-      background-color: #1b1b4f;
-      border-color: black;
-      border-radius: 30px;
-      color: #fff;
-      font-size: 14px;
-      padding: 17px 30px;
-      margin-top: 80px;
-      max-width: 30%; }
-      .banner .banner-section #chamada button:hover {
-        background-color: #fff;
-        color: #161765;
-        border: #fff; }
+    width: 50px;
+    height: 50px;
+    justify-content: space-evenly; }
+    header .toggle .menu-box div {
+      width: 50px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: #52eac8; }
 
 #banner-home {
   background-image: url(../img/home_banner_bg.jpg);
   height: 100vh; }
+  #banner-home .banner-section {
+    height: 85vh;
+    display: flex;
+    align-items: center; }
+    #banner-home .banner-section #chamada {
+      max-width: 600px;
+      height: 95vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      #banner-home .banner-section #chamada h1 {
+        font-size: 65px;
+        color: #fff; }
+      #banner-home .banner-section #chamada p {
+        color: #44a7ff;
+        font-size: 21px; }
+      #banner-home .banner-section #chamada button {
+        background-color: #1b1b4f;
+        border-color: black;
+        border-radius: 30px;
+        color: #fff;
+        font-size: 14px;
+        padding: 17px 30px;
+        margin-top: 80px;
+        max-width: 30%; }
+        #banner-home .banner-section #chamada button:hover {
+          background-color: #fff;
+          color: #161765;
+          border: #fff; }
 
 #banner-sobre {
   background-image: url(../img/home_webdeveloper_subheaderbg1.jpg);
