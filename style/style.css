@@ -116,6 +116,20 @@ h2 {
       font-size: 65px;
       color: #fff; }
 
+#banner-contato {
+  background-image: url(../img/home_webdeveloper_subheaderbg2.jpg);
+  background-repeat: no-repeat; }
+  #banner-contato #chamada-contato {
+    max-width: 100vw;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    #banner-contato #chamada-contato h1 {
+      font-size: 65px;
+      color: #fff; }
+
 #servicos {
   justify-content: space-between; }
 
@@ -313,6 +327,52 @@ h2 {
       color: #fff; }
       #case2 .case2-conteudo ul li {
         padding: 15px 0; }
+
+#contato-box {
+  padding: 100px 0; }
+
+.formulario {
+  width: 60%; }
+  .formulario form {
+    width: 100%;
+    background-color: #fff;
+    box-shadow: 0px 0px 30px rgba(200, 196, 219, 0.3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 0;
+    border-radius: 20px; }
+    .formulario form input, .formulario form textarea {
+      width: 80%;
+      border: none;
+      border-bottom: 2px solid #5774bd;
+      padding: 15px;
+      font-size: 14px; }
+    .formulario form button {
+      border: none;
+      background-color: #52eac8;
+      color: #fff;
+      width: 87%;
+      padding: 15px;
+      margin-top: 20px;
+      font-size: 16px;
+      font-weight: 550; }
+
+.contato-info {
+  width: 40%;
+  padding: 0 40px;
+  box-sizing: border-box; }
+
+.phone {
+  border-bottom: 1px solid #52eac8;
+  padding-bottom: 20px; }
+  .phone div {
+    padding: 10px 0; }
+  .phone a {
+    color: #777; }
+
+.mail a {
+  color: #777; }
 
 footer {
   border-top: 1px solid #777;
